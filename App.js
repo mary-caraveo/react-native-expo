@@ -8,9 +8,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>React native</Text>
-      <Greet />
+      <Greet firstname="Andrea" lastname={28}/>
       <Greet firstname="Carolina" lastname="Lara" />
-      <Greet firstname="Victoria" lastname="Cabrera" />
+      {/* <Greet firstname="Victoria" lastname="Cabrera" /> */}
       <StatusBar style="auto" />
     </View>
   );
