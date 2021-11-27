@@ -3,7 +3,6 @@ import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 
 export default function Greet(props) {
-  // const { firstname="Guadalupe", lastname="Caraveo" } = props;
   const { firstname, lastname } = props;
 
   return (
