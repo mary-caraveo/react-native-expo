@@ -9,15 +9,10 @@ export default function Greet(props) {
     <Text>
       Hola {firstname} {lastname}
     </Text>
-  )
+  );
 }
-
-// Greet.defaultProps = {
-//   firstname: "Guadalupe",
-//   lastname: "Caraveo"
-// };
 
 Greet.propTypes = {
   firstname: PropTypes.string.isRequired,
-  lastname: PropTypes.string.isRequired
-}
+  lastname: PropTypes.string.isRequired,
+};

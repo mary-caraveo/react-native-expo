@@ -11,5 +11,5 @@ export default function NavigationTab() {
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
-  )
+  );
 }

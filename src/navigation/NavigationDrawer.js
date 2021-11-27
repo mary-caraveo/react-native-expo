@@ -11,6 +11,6 @@ export default function NavigationDrawer() {
       <Drawer.Screen name="Home" component={HomeScreen} />
       <Drawer.Screen name="Settings" component={SettingsScreen} />
     </Drawer.Navigator>
-  )
+  );
 }
 
