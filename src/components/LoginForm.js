@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput, Button, Text, View } from 'react-native';
 
-export default function LoginForm() {
+const LoginForm = () => {
   return (
     <View>
       <TextInput placeholder="Email" />
@@ -10,3 +10,5 @@ export default function LoginForm() {
     </View>
   );
 }
+
+export default LoginForm;

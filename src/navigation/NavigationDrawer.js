@@ -5,7 +5,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 
 const Drawer = createDrawerNavigator();
 
-export default function NavigationDrawer() {
+const NavigationDrawer = () => {
   return (
     <Drawer.Navigator>
       <Drawer.Screen name="Home" component={HomeScreen} />
@@ -14,3 +14,4 @@ export default function NavigationDrawer() {
   );
 }
 
+export default NavigationDrawer;

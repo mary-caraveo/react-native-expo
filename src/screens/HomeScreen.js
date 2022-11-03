@@ -1,7 +1,7 @@
 import React from 'react'
-import { View, Text, Button, SafeAreaView } from 'react-native'
+import { Text, Button, SafeAreaView } from 'react-native'
 
-export default function HomeScreen(props) {
+const HomeScreen = (props) => {
   const { navigation } = props;
 
   const goToSettings = () => {
@@ -19,3 +19,5 @@ export default function HomeScreen(props) {
     </SafeAreaView>
   );
 }
+
+export default HomeScreen;

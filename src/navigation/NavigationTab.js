@@ -5,7 +5,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 
 const Tab = createBottomTabNavigator();
 
-export default function NavigationTab() {
+const NavigationTab = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={HomeScreen} />
@@ -13,3 +13,5 @@ export default function NavigationTab() {
     </Tab.Navigator>
   );
 }
+
+export default NavigationTab;

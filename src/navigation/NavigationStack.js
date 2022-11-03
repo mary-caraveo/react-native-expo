@@ -5,7 +5,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 
 const Stack = createStackNavigator();
 
-export default function NavigationStack() {
+const NavigationStack = () => {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" component={HomeScreen} />
@@ -13,3 +13,5 @@ export default function NavigationStack() {
     </Stack.Navigator>
   );
 }
+
+export default NavigationStack;
