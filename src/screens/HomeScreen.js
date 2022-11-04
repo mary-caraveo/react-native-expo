@@ -1,5 +1,5 @@
-import React from 'react'
-import { Text, Button, SafeAreaView } from 'react-native'
+import React from 'react';
+import { View, Image, Button, SafeAreaView, StyleSheet } from 'react-native';
 
 const HomeScreen = (props) => {
   const { navigation } = props;
@@ -9,15 +9,30 @@ const HomeScreen = (props) => {
   };
 
   return (
-    <SafeAreaView>
-      <Text>HomeScreen</Text>
-      <Text>HomeScreen</Text>
-      <Text>HomeScreen</Text>
-      <Text>HomeScreen</Text>
-      <Text>HomeScreen</Text>
-      <Button onPress={goToSettings} title="Ir a Ajustes" />
+    <SafeAreaView style={styles.container}>
+      <View style={styles.contentTop}>
+        <Image style={styles.image} source={require('../../assets/img/setting.png')} />
+      </View>
+      <View style={styles.contentTop} >
+        <Button onPress={goToSettings} title="Ir a Ajustes" />
+      </View>
     </SafeAreaView>
   );
 }
 
 export default HomeScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  image: {
+    borderRadius: 50,
+    width: 300,
+    height: 200,
+  },
+  contentTop: {
+    paddingTop: 40,
+  }
+});
