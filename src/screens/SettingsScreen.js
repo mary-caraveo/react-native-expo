@@ -20,8 +20,6 @@ const SettingsScreen = (props) => {
   );
 }
 
-export default SettingsScreen;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -36,3 +34,5 @@ const styles = StyleSheet.create({
     paddingTop: 40,
   }
 });
+
+export default SettingsScreen;
